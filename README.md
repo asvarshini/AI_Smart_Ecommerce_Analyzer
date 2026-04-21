@@ -1,20 +1,78 @@
-# AI Smart Ecommerce Analyzer
+\# 🛒 AI Smart E-Commerce Analyzer
 
-A professional AI-powered eCommerce analytics project focused on:
 
-- Product Recommendation Engine
-- Trend Forecasting
-- Customer Segmentation
-- Data Visualization Dashboard
 
-## Tech Stack
+\##  Project Overview
 
-- Python
-- Pandas
-- Scikit-learn
-- Jupyter Notebook
-- GitHub
+This project analyzes e-commerce data to extract business insights and build a basic recommendation system.
 
-## Current Status
 
-Project Setup Phase
+
+\---
+
+
+
+\## ⚙️ Tech Stack
+
+\- Python (Pandas)
+
+\- MySQL
+
+\- SQL
+
+\- Git \& GitHub
+
+
+
+\---
+
+
+
+\## 📊 Current Progress
+
+
+
+\###  Data Preparation
+
+\- Imported Olist dataset into MySQL
+
+\- Structured tables: customers, orders, order\_items, products
+
+
+
+\### SQL Analysis
+
+\- Top selling products
+
+\- Revenue analysis
+
+\- Customer segmentation
+
+\- Regional analysis
+
+
+
+\###  Recommendation System (SQL-based)
+
+\- Built co-purchase analysis
+
+\- Identified frequently bought category pairs
+
+\- Implemented basic recommendation logic
+
+
+
+\---
+
+
+
+\##  Next Steps
+
+\- Exploratory Data Analysis (EDA) using Python
+
+\- Data visualization
+
+\- Advanced recommendation model
+
+\- Dashboard creation
+
