@@ -38,17 +38,22 @@ LIMIT 10;
 -- 3. TOP SELLING PRODUCT CATEGORIES
 -- ============================================
 
--- Identify most purchased product categories
+-- Top selling product categories by purchase volume
+
 SELECT 
     p.product_category_name,
-    COUNT(*) AS total_sales
+    t.product_category_name_english,
+    COUNT(*) AS total_purchases
 FROM order_items oi
 JOIN products p
 ON oi.product_id = p.product_id
-GROUP BY p.product_category_name
-ORDER BY total_sales DESC
+JOIN category_translation t
+ON t.product_category_name = p.product_category_name
+GROUP BY 
+    p.product_category_name,
+    t.product_category_name_english
+ORDER BY total_purchases DESC
 LIMIT 10;
-
 
 -- ============================================
 -- 4. REVENUE ANALYSIS
